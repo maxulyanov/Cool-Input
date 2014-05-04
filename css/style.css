@@ -1,0 +1,59 @@
+/*Reset*/
+*{
+	margin:0;
+	padding:0;
+}
+img{
+	border:none;
+}
+input{
+	
+	border:none;
+}
+ul{
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+}
+input,select,option{
+	outline:0;
+	border:0;
+}
+a{
+    text-decoration: none;
+}
+
+/*General*/
+body{
+	background: rgb(199, 199, 199);
+}
+
+/*Style*/
+.test{
+	border: 2px solid #DADADA;
+	background: #19486B;
+	width: 500px;
+	height: 50px;
+	display: block;
+	padding: 0 5px;
+	margin: 50px auto;
+	color: transparent;
+	font-size: 34px;
+	font-weight: bold;
+}
+.input-elem{
+	position: absolute;
+	top:10px;
+	left:10px;
+}
+.coolinput{
+	position: relative;
+	width: 400px;
+}
+.coolinput span{
+	color: #FFF;
+	font-size: 34px;
+	font-weight: bold;
+	position: relative;
+}
