@@ -17,13 +17,15 @@
 			divWrap.appendTo('body');
 
 
-			
-			$(this).keyup(function(){
+			var exe = '';
 
+			$(this).keyup(function(){
   				var last = $(this).val();
-  				last = last.slice(-1)
-  				var l = $('<span>'+ last +'</span>');
-  				console.log(l)
+
+  				var last2 = last.slice(-1)
+  				exe +=last2;
+  				var l = $('<span>'+ last2 +'</span>');
+
   				$('.input-elem').append(l);
 
   				var lastElem = $('.input-elem').find('span').last();
@@ -31,6 +33,17 @@
   				$(lastElem).animate({
   					top : '5px',
   				}, 100)
+
+  				if(exe !== last){
+  					exe = last;
+  					var l2 = $('<span>'+ exe +'</span>');
+  					$('.input-elem').find('span').remove();
+  					$('.input-elem').append(l2);
+  					console.log('if')
+  				}
+  				else{
+  					console.log('else')
+  				}
 			});
  
 
